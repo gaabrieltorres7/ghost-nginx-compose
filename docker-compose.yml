@@ -20,7 +20,7 @@ services:
           "ping",
           "-h",
           "localhost",
-          "--user=root",
+          "--user=${MYSQL_USER}",
           "--password=${MYSQL_ROOT_PASSWORD}",
         ]
       interval: 10s
