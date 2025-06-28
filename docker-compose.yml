@@ -10,6 +10,8 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
     healthcheck:
       test:
         [
@@ -41,3 +43,8 @@ services:
       database__connection__password: ${MYSQL_PASSWORD}
       database__connection__database: ${MYSQL_DATABASE}
       url: ${APP_URL}
+    volumes:
+      - ghost_content:/var/lib/ghost/content
+volumes:
+  db_data:
+  ghost_content:
