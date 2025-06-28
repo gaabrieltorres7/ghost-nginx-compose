@@ -46,7 +46,7 @@ Mapeie o domínio `gtblog.local` para o seu endereço de loopback.
 
 **Adicione a seguinte linha ao seu arquivo `hosts`:**
 * **macOS / Linux:** `/etc/hosts`
-* **Windows:** `C:\Windows\System32\drivers\etc\hosts` (edite como Admin)
+* **Windows / WSL:** `C:\Windows\System32\drivers\etc\hosts` (edite como Admin)
 
 ```
 127.0.0.1 gtblog.local
